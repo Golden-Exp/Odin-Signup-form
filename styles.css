@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFont;
+    src: url(FARCEB__.TTF);
+  }
+
 body {
     display: flex;
     gap: 0px;
@@ -5,25 +10,46 @@ body {
     padding-left: 200px;
     padding-right: 200px;
     margin: 0;
+    background-color: black;
 }
 
 .image {
-    height: 100vh;
-    width: 45vw;
+    height: 75vh;
+    width: 40vw;
     padding: 0;
     margin: 0;
     display: block;
-    background-image: url("Spidey.jpg");
-    background-size: contain;
-    padding-top: 27.1vh;
+    background-image: url("nature.jpg");
+    background-size: cover;
+    padding-top: 24.5vh;
 }
 
 .logo {
-    height: 100px;
+    height: 120px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0, .5);
     margin: auto;
-    opacity: 70%;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    gap: 0px;
+}
+
+#vaas {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+#title {
+    margin-right: auto;
+    margin-left: 0;
+    font-family: myFont;
 }
 
 
@@ -31,6 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .header {
@@ -46,14 +73,14 @@ body {
     padding-top: 115px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 700;
 }
 
 #second {
     padding-left: 30px;
     padding-right: 30px;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -61,7 +88,7 @@ body {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -71,8 +98,78 @@ body {
     width: 100%;
 }
 
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 40px;
+}
+label {
+    font-size: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    height: 20px;
+}
+
+input:invalid {
+    border: 1px solid red;
+    border-radius: 2px;
+    height: 20px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px lightgray;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin-right: 40px;
+}
+
 .down {
     background-color: rgb(245, 245, 245);
     height: 30vh;
     width: 100%;
+}
+
+.create {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: white;
+    width: 180px;
+    height: 40px;
+    font-weight: 550;
+    border-radius: 6px;
+    background-color: #596D48;
+    border-color: #E5E7EB;
+    box-shadow: 4px 4px 8px lightgray;
+}
+
+.next {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.login {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+    background: none;
 }
